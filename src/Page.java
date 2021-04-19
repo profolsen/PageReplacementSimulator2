@@ -6,6 +6,7 @@ import java.util.HashMap;
  * about a page p, such as:y
  * when the page was accessed: p.put("accessTime", t) //where t is an integer representing now
  * how frequently the page is accessed: p.put("frequency", f) //f is the page access frequency.
+ * to get, for example, the access time, call p.get("accessTime")
  *
  */
 public class Page extends HashMap<String, Integer> {
