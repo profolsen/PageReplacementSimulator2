@@ -30,7 +30,7 @@ public class Experiment {
         Memory result_FIFO = new Memory(8);
         //set page replacement algorithm to FIFO.
         for(int id : accesses) result_FIFO.access(id, now++);
-        System.out.println("LIFO Page Replacement Page Faults: " + result_FIFO.pageFaults());
+        System.out.println("FIFO Page Replacement Page Faults: " + result_FIFO.pageFaults());
 
         now = 0;
         Memory result_LRU = new Memory(8);
